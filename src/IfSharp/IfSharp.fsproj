@@ -144,6 +144,9 @@
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.7.1'">
       <ItemGroup>
+        <Reference Include="Microsoft.CSharp">
+          <Paket>True</Paket>
+        </Reference>
         <Reference Include="AsyncIO">
           <HintPath>..\..\packages\AsyncIO\lib\net40\AsyncIO.dll</HintPath>
           <Private>True</Private>
